@@ -72,7 +72,7 @@ fun ChildContent(name:MutableState<String>){
     } )
 }
 
-//functions without state hoisting
+//functions with state hoisting
 @Composable
 fun ParentContent1(){
     var name by remember { mutableStateOf("") }
